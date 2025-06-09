@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="openCopy()">Copy URL</button>
+  <script>
+    function openCopy() {
+      const url = encodeURIComponent(window.location.href);
+      window.open(`child.html?copy=${url}`, '_blank');
+    }
+  </script>
+</body>
+</html>
